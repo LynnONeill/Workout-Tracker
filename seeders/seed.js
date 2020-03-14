@@ -119,9 +119,16 @@ let workoutSeed = [
         weight: 300,
         reps: 10,
         sets: 4
+      },
+      {
+        type: "cardio",
+        name: "Swimming",
+        duration: 30,
+        distance: 1
       }
     ]
   },
+  /// The last document of this seeder file was incorrect.  Data matched cardio schema, but type was listed as resistance. - Corrected //
   {
     day: new Date().setDate(new Date().getDate()-1),
     exercises: [
@@ -129,7 +136,9 @@ let workoutSeed = [
         type: "resistance",
         name: "Bench",
         duration: 30,
-        distance: 2
+        weight: 300,
+        reps: 10,
+        sets: 4,
       }
     ]
   }
