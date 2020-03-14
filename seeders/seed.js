@@ -120,12 +120,6 @@ let workoutSeed = [
         reps: 10,
         sets: 4
       },
-      {
-        type: "cardio",
-        name: "Swimming",
-        duration: 30,
-        distance: 1
-      }
     ]
   },
   /// The last document of this seeder file was incorrect.  Data matched cardio schema, but type was listed as resistance. - Corrected //
