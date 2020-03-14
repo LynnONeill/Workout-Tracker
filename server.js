@@ -15,7 +15,7 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
   useFindAndModify: false
 });
 
-let MONGOB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
+let MONGOB_URI = process.env.MONGODB_URI || "mongodb://localhost/workout";
 mongoose.connect(MONGODB_URI);
 
 // routes
