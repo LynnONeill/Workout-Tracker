@@ -9,6 +9,7 @@ router.get("/api/workouts", (req, res) => {
     db.Workout.find({})
         .then(dbWorkout => {
         res.json(dbWorkout)
+        // console.log(dbWorkout)
     })
     .catch(err => {
         res.status(400).json(err);
@@ -44,7 +45,6 @@ router.post("/api/workouts", ( {body}, res) => {
     } catch (err) {
         res.status(200).send(err.message);
     }
-    
     });
 
 router.get("/api/workouts/range", (req, res) => {

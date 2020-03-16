@@ -25,8 +25,11 @@ async function initExercise() {
     workout = await API.createWorkout()
     console.log("workout id was undefined redirecting to createWorkout");
     console.log("below is log of last workout");
+
+    workout = await API.getLastWorkout();
     console.log(workout)
   }
+
   if (workout) {
     location.search = "?id=" + workout._id;
   }
